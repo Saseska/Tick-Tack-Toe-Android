@@ -1,0 +1,56 @@
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You win/lose !"
+            android:id="@+id/tvWinner"
+            android:layout_gravity="center"
+            android:textSize="20sp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Game Field"
+            android:id="@+id/tvGameField"
+            android:layout_gravity="center"
+            android:typeface="monospace"/>
+
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Game"
+                android:id="@+id/btnNewGame"
+                android:onClick="onClickBtn"
+                android:layout_column="0"
+                android:layout_weight="1"/>
+
+        <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show steps history"
+                android:onClick="onClickBtn"
+                android:id="@+id/btnShowHist"
+                android:layout_column="1"
+                android:layout_weight="1"/>
+    </TableRow>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Steps History"
+            android:id="@+id/tvHistory"
+            android:visibility="invisible"
+            android:layout_gravity="center"/>
+
+</LinearLayout><!-- From: file:/E:/src/My_Projects/Tick-Tack-Toe-Android/Tick-Tick-Tack-Toe/src/main/res/layout/activity_win.xml -->

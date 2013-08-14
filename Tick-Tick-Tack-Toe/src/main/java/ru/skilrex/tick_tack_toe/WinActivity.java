@@ -17,9 +17,11 @@ public class WinActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_win);
+
         tvWinner = (TextView) findViewById(R.id.tvWinner);
         tvGameField = (TextView) findViewById(R.id.tvGameField);
         tvHistory = (TextView) findViewById(R.id.tvHistory);
+
         tvWinner.setText(LastGameInfo.winner);
         tvGameField.setText(LastGameInfo.plane);
         tvHistory.setText(LastGameInfo.stepsHistory);
@@ -36,7 +38,7 @@ public class WinActivity extends Activity {
     public void onClickBtn(View view){
         switch (view.getId()){
             case R.id.btnShowHist:
-                tvHistory.setVisibility(1);
+                tvHistory.setVisibility(view.VISIBLE);
                 break;
             case R.id.btnNewGame:
                 Intent intent = new Intent(this, MainMenu.class);

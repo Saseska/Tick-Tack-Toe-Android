@@ -1,7 +1,9 @@
 package ru.skilrex.tick_tack_toe.game;
 
 import android.content.Context;
+import android.widget.GridLayout;
 
+import ru.skilrex.tick_tack_toe.R;
 import ru.skilrex.tick_tack_toe.players.Player;
 
 public class GameField {
@@ -107,18 +109,38 @@ public class GameField {
             field[y][x] = DEFAULT_SYMBOL;
     }
 
-    public void stepBack(){
+    public void stepBack(GridLayout gl1, GameField gameField, int ONE_POINT_SIZE){
+        int childCount = gl1.getChildCount();
+        int x,y;
+        for(int i = 0; i < childCount; i++ ){
+            x = Math.round(gl1.getChildAt(i).getX() / ONE_POINT_SIZE) + GameField.RULER_MIN_VALUE;
+            y = Math.round(gl1.getChildAt(i).getY() / ONE_POINT_SIZE) + GameField.RULER_MIN_VALUE;
+            if((x == gameField.getLastStepX()) && (y == gameField.getLastStepY())){
+                gl1.getChildAt(i).setBackgroundResource(R.drawable.clear);
+                gl1.getChildAt(i).setClickable(true);
+            }
+        }
         historySteps--;
         erasePoint(historyX[historySteps], historyY[historySteps]);
+
+        for(int i = 0; i < childCount; i++ ){
+            x = Math.round(gl1.getChildAt(i).getX() / ONE_POINT_SIZE) + GameField.RULER_MIN_VALUE;
+            y = Math.round(gl1.getChildAt(i).getY() / ONE_POINT_SIZE) + GameField.RULER_MIN_VALUE;
+            if((x == gameField.getLastStepX()) && (y == gameField.getLastStepY())){
+                gl1.getChildAt(i).setBackgroundResource(R.drawable.clear);
+                gl1.getChildAt(i).setClickable(true);
+            }
+        }
         historySteps--;
         erasePoint(historyX[historySteps], historyY[historySteps]);
     }
 
     public StringBuilder getHistory(){
         StringBuilder line = new StringBuilder();
+        if(historySteps == maxSteps) historySteps--;
         for (int i = 0; i<=historySteps; i++){
             if((i % 2) == 0) line.append("Player X  "); else line.append("Player O  ");
-            line.append("X: " + historyX[i] + " Y: " + historyY[i] + "\n");
+            line.append("X: " + (historyX[i] + RULER_MIN_VALUE) + " Y: " + (historyY[i] + RULER_MIN_VALUE) + "\n");
         }
         return line;
     }

@@ -112,4 +112,4 @@
             android:layout_gravity="right|center_vertical"
             android:singleLine="false"
             android:onClick="onBtnClick"/>
-</LinearLayout>
+</LinearLayout><!-- From: file:/E:/src/My_Projects/Tick-Tack-Toe-Android/Tick-Tick-Tack-Toe/src/main/res/layout/activity_game.xml -->

@@ -1,47 +1,57 @@
 package ru.skilrex.tick_tack_toe;
 
-import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.app.Activity;
-import android.view.Menu;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.GridLayout;
+import android.widget.ImageButton;
+import android.widget.Toast;
 
 import ru.skilrex.tick_tack_toe.game.GameField;
 import ru.skilrex.tick_tack_toe.players.Computer;
 import ru.skilrex.tick_tack_toe.players.Human;
 import ru.skilrex.tick_tack_toe.players.Player;
 
-public class GameActivity extends Activity{
+public class GameActivity extends Activity {
 
+    ImageButton ib1;
+    ImageButton ib2;
+    ImageButton ib3;
+    ImageButton ib4;
+    ImageButton ib5;
+    ImageButton ib6;
+    ImageButton ib7;
+    ImageButton ib8;
+    ImageButton ib9;
+    GridLayout gl1;
     Context context;
+
+    private final static int ONE_POINT_SIZE = 160;
     private boolean win = false;
     private Human playerX = new Human('X');
     private Computer playerO = new Computer('O');
     private GameField gameField = new GameField(3,3);
     private boolean work;
-
-    EditText etY;
-    EditText etX;
-    TextView tvGameField;
-    Button btnEnter;
-    Button btnStepBack;
+    private boolean gameEnd = false;
+    private int childCount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
-        etY = (EditText) findViewById(R.id.etY);
-        etX = (EditText) findViewById(R.id.etX);
-        tvGameField = (TextView) findViewById(R.id.tvGameField);
-        btnEnter = (Button) findViewById(R.id.btnEnter);
-        btnStepBack = (Button) findViewById(R.id.btnStepBack);
-        tvGameField.setText(gameField.viewPlane());
+        ib1 = (ImageButton) findViewById(R.id.ib1);
+        ib2 = (ImageButton) findViewById(R.id.ib2);
+        ib3 = (ImageButton) findViewById(R.id.ib3);
+        ib4 = (ImageButton) findViewById(R.id.ib4);
+        ib5 = (ImageButton) findViewById(R.id.ib5);
+        ib6 = (ImageButton) findViewById(R.id.ib6);
+        ib7 = (ImageButton) findViewById(R.id.ib7);
+        ib8 = (ImageButton) findViewById(R.id.ib8);
+        ib9 = (ImageButton) findViewById(R.id.ib9);
+        gl1 = (GridLayout) findViewById(R.id.gl1);
+        childCount = gl1.getChildCount();
         context = getApplicationContext();
     }
 
@@ -53,52 +63,58 @@ public class GameActivity extends Activity{
         return true;
     }*/
 
-    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     public void onBtnClick(View view){
         switch (view.getId()){
-            case R.id.btnEnter:
-                if(!(etY.getText().toString().equals("") || etX.getText().toString().equals(""))){
-                    step();
-                    etX.setText("");
-                    etY.setText("");
+            default:
+                work = true;
+                int x,y;
+                x = Math.round(view.getX() / ONE_POINT_SIZE) + GameField.RULER_MIN_VALUE;
+                y = Math.round(view.getY() / ONE_POINT_SIZE) + GameField.RULER_MIN_VALUE;
+
+                Toast.makeText(this, "X: " + view.getX() + " Y: " + view.getY(), Toast.LENGTH_SHORT).show();
+
+                while (work){
+                    playerX.step(gameField, String.valueOf(y), String.valueOf(x), context);
+                    work = playerX.getWork();
                 }
+                view.setBackgroundResource(R.drawable.x);
+                view.setClickable(false);
+
+                checkWin(playerX);
+                if(gameEnd) return;
+
+                playerO.step(gameField, String.valueOf(x), String.valueOf(y), context);
+                for(int i = 0; i < childCount; i++ ){
+                    x = Math.round(gl1.getChildAt(i).getX() / ONE_POINT_SIZE) + GameField.RULER_MIN_VALUE;
+                    y = Math.round(gl1.getChildAt(i).getY() / ONE_POINT_SIZE) + GameField.RULER_MIN_VALUE;
+                    if((x == gameField.getLastStepX()) && (y == gameField.getLastStepY())){
+                        gl1.getChildAt(i).setBackgroundResource(R.drawable.o);
+                        gl1.getChildAt(i).setClickable(false);
+                    }
+                }
+                checkWin(playerO);
                 break;
-            case R.id.btnStepBack:
+
+            case R.id.btnBack:
                 if(gameField.getHistorySteps() > 1){
-                    gameField.stepBack();
-                    tvGameField.setText(gameField.viewPlane().toString());
+                    gameField.stepBack(gl1, gameField, ONE_POINT_SIZE);
                 }
                 break;
         }
-    }
-
-
-    public void step(){
-        work = true;
-        while (work){
-            playerX.step(gameField, etY.getText().toString(), etX.getText().toString(), context);
-            work = playerX.getWork();
-        }
-        tvGameField.setText(gameField.viewPlane());
-        checkWin(playerX);
-
-        playerO.step(gameField, etY.getText().toString(), etX.getText().toString(), context);
-        tvGameField.setText(gameField.viewPlane());
-        checkWin(playerO);
     }
 
     public void checkWin(Player player){
         win = gameField.checkWin(player);
         if(win){
+            gameEnd = true;
             LastGameInfo.winner = ("Player " + player.getSymbol());
             LastGameInfo.plane = gameField.viewPlane().toString();
             LastGameInfo.stepsHistory = gameField.getHistory();
             Intent intent = new Intent(this, WinActivity.class);
             startActivity(intent);
             finish();
-        }
-
-        if(!win && (gameField.getHistorySteps() == gameField.getMaxSteps())){
+        } else if(gameField.getHistorySteps() == gameField.getMaxSteps()){
+            gameEnd = true;
             LastGameInfo.winner = ("Dead heat");
             LastGameInfo.plane = gameField.viewPlane().toString();
             LastGameInfo.stepsHistory = gameField.getHistory();

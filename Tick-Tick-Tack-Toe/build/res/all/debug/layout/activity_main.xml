@@ -1,0 +1,23 @@
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Игра Крестики-Нолики"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Игра с компьютером"
+            android:textSize="17sp"
+            android:id="@+id/pvcBtn"
+            android:onClick="onClickBtn"
+            android:layout_gravity="center"/>
+
+</LinearLayout><!-- From: file:/E:/src/My_Projects/Tick-Tack-Toe-Android/Tick-Tick-Tack-Toe/src/main/res/layout/activity_main.xml -->
