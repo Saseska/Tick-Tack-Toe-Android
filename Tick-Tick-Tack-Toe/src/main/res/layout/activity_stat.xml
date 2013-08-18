@@ -1,0 +1,67 @@
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stat_wins"
+                android:id="@+id/tvWins"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:layout_margin="5dp"
+                android:textSize="20dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stat_loses"
+                android:id="@+id/tvLoses"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_margin="5dp"
+                android:textSize="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:id="@+id/tvNumWins"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textColor="#444"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:id="@+id/tvNumLoses"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="#444"/>
+    </LinearLayout>
+
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pbWinsLoses"
+            android:layout_margin="5dp"/>
+
+</LinearLayout>

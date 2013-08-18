@@ -14,32 +14,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c7a12d2-6c3a-4986-8428-f9e6b38d81d9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/game/StatGameInfo.java" />
-      <change type="DELETED" beforePath="E:\src\My_Projects\Tick-Tack-Toe-Android\Tick-Tick-Tack-Toe\build\res\all\debug\layout\activity_testgame.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\src\My_Projects\Tick-Tack-Toe-Android\Tick-Tick-Tack-Toe\src\main\java\ru\skilrex\tick_tack_toe\LastGameInfo.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/build/res/all/debug/drawable-xhdpi/clear.png" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/build/res/all/debug/drawable-xhdpi/clear.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/build/res/all/debug/drawable-xhdpi/field.png" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/build/res/all/debug/drawable-xhdpi/field.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/build/res/all/debug/drawable-xhdpi/o.png" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/build/res/all/debug/drawable-xhdpi/o.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/build/res/all/debug/drawable-xhdpi/x.png" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/build/res/all/debug/drawable-xhdpi/x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/GameActivity.java" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/GameActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/game/GameField.java" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/game/GameField.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/MainMenu.java" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/MainMenu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/build/source/r/debug/ru/skilrex/tick_tack_toe/R.java" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/build/source/r/debug/ru/skilrex/tick_tack_toe/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tick-Tack-Toe-Android.iml" afterPath="$PROJECT_DIR$/Tick-Tack-Toe-Android.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/Tick-Tick-Tack-Toe.iml" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/Tick-Tick-Tack-Toe.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/WinActivity.java" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/WinActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/build/res/all/debug/layout/activity_game.xml" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/build/res/all/debug/layout/activity_game.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/layout/activity_game.xml" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/layout/activity_game.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/build/res/all/debug/layout/activity_main.xml" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/build/res/all/debug/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/build/res/all/debug/layout/activity_win.xml" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/build/res/all/debug/layout/activity_win.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/layout/activity_win.xml" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/layout/activity_win.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/values-ru/strings.xml" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/values-ru/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/build/res/all/debug/values/values.xml" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/build/res/all/debug/values/values.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/StatActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/layout/activity_stat.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/menu/pref.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/menu/stat.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Tick-Tick-Tack-Toe.iws" />
@@ -120,40 +98,7 @@
     <favorites_list name="Tick-Tick-Tack-Toe" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="StatActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/StatActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="44" selection-start="254" selection-end="255" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_stat.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/layout/activity_stat.xml">
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state line="29" column="39" selection-start="1137" selection-end="1137" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1224">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="9" selection-start="191" selection-end="191" vertical-scroll-proportion="0.11657143" vertical-offset="0" max-vertical-offset="875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -164,6 +109,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitLogSettings">
+    <option name="myStructureFilterPaths" />
     <option name="myDateState">
       <MyDateState />
     </option>
@@ -288,6 +234,272 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Tick-Tick-Tack-Toe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tick-Tick-Tack-Toe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tick-Tack-Toe-Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tick-Tick-Tack-Toe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tick-Tick-Tack-Toe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tick-Tack-Toe-Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tick-Tick-Tack-Toe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tick-Tick-Tack-Toe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tick-Tack-Toe-Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tick-Tick-Tack-Toe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values-ru" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tick-Tick-Tack-Toe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tick-Tack-Toe-Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tick-Tick-Tack-Toe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tick-Tick-Tack-Toe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tick-Tack-Toe-Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tick-Tick-Tack-Toe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tick-Tick-Tack-Toe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tick-Tack-Toe-Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tick-Tick-Tack-Toe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tick-Tick-Tack-Toe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tick-Tack-Toe-Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tick-Tick-Tack-Toe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tick_tack_toe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tick-Tick-Tack-Toe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tick-Tack-Toe-Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tick-Tick-Tack-Toe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tick_tack_toe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="players" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tick-Tick-Tack-Toe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tick-Tack-Toe-Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tick-Tick-Tack-Toe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tick_tack_toe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -485,7 +697,11 @@
       <created>1376490022154</created>
       <updated>1376490022154</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add statistic + some fixes">
+      <created>1376823802903</created>
+      <updated>1376823802903</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -510,7 +726,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17022412" sideWeight="0.7069922" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17022412" sideWeight="0.6714761" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29300776" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -557,7 +773,8 @@
     </option>
     <MESSAGE value="New game field design" />
     <MESSAGE value="redraw res" />
-    <option name="LAST_COMMIT_MESSAGE" value="redraw res" />
+    <MESSAGE value="add statistic + some fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="add statistic + some fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -684,12 +901,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/StatActivity.java">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="44" selection-start="254" selection-end="255" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="6" column="9" selection-start="191" selection-end="191" vertical-scroll-proportion="0.11657143" vertical-offset="0" max-vertical-offset="875">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -703,10 +918,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/StatActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="9" selection-start="191" selection-end="191" vertical-scroll-proportion="0.11657143" vertical-offset="0" max-vertical-offset="875">
-          <folding />
+        <state line="9" column="44" selection-start="254" selection-end="255" vertical-scroll-proportion="0.17485714" vertical-offset="0" max-vertical-offset="875">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
