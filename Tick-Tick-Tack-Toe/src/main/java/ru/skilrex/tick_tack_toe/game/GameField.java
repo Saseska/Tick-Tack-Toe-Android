@@ -139,8 +139,8 @@ public class GameField {
         StringBuilder line = new StringBuilder();
         if(historySteps == maxSteps) historySteps--;
         for (int i = 0; i<=historySteps; i++){
-            if((i % 2) == 0) line.append("Player X  "); else line.append("Player O  ");
-            line.append("X: " + (historyX[i] + RULER_MIN_VALUE) + " Y: " + (historyY[i] + RULER_MIN_VALUE) + "\n");
+            if((i % 2) == 0) line.append("Player X:  "); else line.append("Player O:  ");
+            line.append((historyX[i] + RULER_MIN_VALUE) + " ; " + (historyY[i] + RULER_MIN_VALUE) + "\n");
         }
         return line;
     }

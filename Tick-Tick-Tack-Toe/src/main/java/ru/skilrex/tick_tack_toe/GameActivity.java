@@ -7,9 +7,9 @@ import android.app.Activity;
 import android.view.View;
 import android.widget.GridLayout;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
 import ru.skilrex.tick_tack_toe.game.GameField;
+import ru.skilrex.tick_tack_toe.game.StatGameInfo;
 import ru.skilrex.tick_tack_toe.players.Computer;
 import ru.skilrex.tick_tack_toe.players.Human;
 import ru.skilrex.tick_tack_toe.players.Player;
@@ -71,8 +71,6 @@ public class GameActivity extends Activity {
                 x = Math.round(view.getX() / ONE_POINT_SIZE) + GameField.RULER_MIN_VALUE;
                 y = Math.round(view.getY() / ONE_POINT_SIZE) + GameField.RULER_MIN_VALUE;
 
-                Toast.makeText(this, "X: " + view.getX() + " Y: " + view.getY(), Toast.LENGTH_SHORT).show();
-
                 while (work){
                     playerX.step(gameField, String.valueOf(y), String.valueOf(x), context);
                     work = playerX.getWork();
@@ -107,17 +105,17 @@ public class GameActivity extends Activity {
         win = gameField.checkWin(player);
         if(win){
             gameEnd = true;
-            LastGameInfo.winner = ("Player " + player.getSymbol());
-            LastGameInfo.plane = gameField.viewPlane().toString();
-            LastGameInfo.stepsHistory = gameField.getHistory();
+            StatGameInfo.winner = (player.getSymbol());
+            StatGameInfo.plane = gameField.viewPlane().toString();
+            StatGameInfo.stepsHistory = gameField.getHistory();
             Intent intent = new Intent(this, WinActivity.class);
             startActivity(intent);
             finish();
         } else if(gameField.getHistorySteps() == gameField.getMaxSteps()){
             gameEnd = true;
-            LastGameInfo.winner = ("Dead heat");
-            LastGameInfo.plane = gameField.viewPlane().toString();
-            LastGameInfo.stepsHistory = gameField.getHistory();
+            StatGameInfo.winner = ('D');
+            StatGameInfo.plane = gameField.viewPlane().toString();
+            StatGameInfo.stepsHistory = gameField.getHistory();
             Intent intent = new Intent(this, WinActivity.class);
             startActivity(intent);
             finish();

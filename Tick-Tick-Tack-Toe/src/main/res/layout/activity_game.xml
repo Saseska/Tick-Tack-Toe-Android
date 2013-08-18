@@ -107,7 +107,7 @@
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Step Back"
+            android:text="@string/game_step_back"
             android:id="@+id/btnBack"
             android:layout_gravity="right|center_vertical"
             android:singleLine="false"
