@@ -1,0 +1,40 @@
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/difficulty_low"
+            android:id="@+id/btnEasy"
+            android:layout_marginTop="5dp"
+            android:onClick="onClick"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/difficulty_medium"
+            android:id="@+id/btnMedium"
+            android:layout_marginTop="5dp"
+            android:onClick="onClick"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/difficulty_hard"
+            android:id="@+id/btnHard"
+            android:layout_marginTop="5dp"
+            android:onClick="onClick"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center"/>
+
+</LinearLayout><!-- From: file:/E:/src/My_Projects/Tick-Tack-Toe-Android/Tick-Tick-Tack-Toe/src/main/res/layout/activity_setdifficulty.xml -->

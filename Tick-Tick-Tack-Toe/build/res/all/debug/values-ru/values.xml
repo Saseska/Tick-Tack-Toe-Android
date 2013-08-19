@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/E:/src/My_Projects/Tick-Tack-Toe-Android/Tick-Tick-Tack-Toe/src/main/res/values-ru/strings.xml -->
+    <string name="action_settings">Настройки</string>
+    <string name="app_name">Крестики-Нолики</string>
+    <string name="difficulty_hard">Сложный</string>
+    <string name="difficulty_low">Легкий</string>
+    <string name="difficulty_medium">Средний</string>
+    <string name="game_step_back">Шаг назад</string>
+    <string name="menu_new_game">Новая игра</string>
+    <string name="menu_pva">Игра против смартфона</string>
+    <string name="menu_show_history">Показать историю ходов</string>
+    <string name="menu_stat">Статистика</string>
+    <string name="player">Игрок </string>
+    <string name="stat_loses">Проигрышей: </string>
+    <string name="stat_wins">Побед: </string>
+    <string name="title_activity_game">Игра</string>
+    <string name="title_activity_main">Главное меню</string>
+    <string name="title_activity_stat">Статистика</string>
+    <string name="title_activity_win">Конец игры</string>
+    <string name="win_deadheat">Ничья</string>
+    <string name="win_playero">Вы проиграли</string>
+    <string name="win_playerx">Вы победили</string>
+
+</resources>

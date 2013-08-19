@@ -34,6 +34,10 @@
             android:name="ru.skilrex.tick_tack_toe.StatActivity"
             android:label="@string/title_activity_stat" >
         </activity>
+        <activity
+            android:name="ru.skilrex.tick_tack_toe.SetDifficultyActivity"
+            android:label="@string/title_activity_set_difficulty" >
+        </activity>
     </application>
 
 </manifest>

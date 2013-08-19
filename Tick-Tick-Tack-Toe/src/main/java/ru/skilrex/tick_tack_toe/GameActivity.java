@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.view.View;
 import android.widget.GridLayout;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import ru.skilrex.tick_tack_toe.game.GameField;
 import ru.skilrex.tick_tack_toe.game.StatGameInfo;
@@ -31,16 +32,22 @@ public class GameActivity extends Activity {
     private final static int ONE_POINT_SIZE = 160;
     private boolean win = false;
     private Human playerX = new Human('X');
-    private Computer playerO = new Computer('O');
+    private Computer playerO = null;
     private GameField gameField = new GameField(3,3);
     private boolean work;
     private boolean gameEnd = false;
     private int childCount;
+    private String difficulty;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
+        context = getApplicationContext();
+
+        difficulty = getIntent().getStringExtra("difficulty");
+        playerO = new Computer(difficulty, 'O');
+
         ib1 = (ImageButton) findViewById(R.id.ib1);
         ib2 = (ImageButton) findViewById(R.id.ib2);
         ib3 = (ImageButton) findViewById(R.id.ib3);
@@ -52,7 +59,6 @@ public class GameActivity extends Activity {
         ib9 = (ImageButton) findViewById(R.id.ib9);
         gl1 = (GridLayout) findViewById(R.id.gl1);
         childCount = gl1.getChildCount();
-        context = getApplicationContext();
     }
 
 

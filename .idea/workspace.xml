@@ -2,9 +2,7 @@
 <project version="4">
   <component name="AndroidLayoutPreviewToolWindow">
     <option name="state">
-      <GlobalState>
-        <option name="visible" value="false" />
-      </GlobalState>
+      <GlobalState />
     </option>
   </component>
   <component name="AndroidLayouts">
@@ -14,11 +12,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c7a12d2-6c3a-4986-8428-f9e6b38d81d9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/StatActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/layout/activity_stat.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/menu/pref.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/menu/stat.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/SetDifficultyActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/build/res/all/debug/layout/activity_setdifficulty.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/layout/activity_setdifficulty.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/build/res/all/debug/layout/activity_stat.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/build/res/all/debug/menu/set_difficulty.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/build/res/all/debug/values-ru/values.xml" />
+      <change type="DELETED" beforePath="E:\src\My_Projects\Tick-Tack-Toe-Android\Tick-Tick-Tack-Toe\build\res\all\debug\menu\test_game.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/players/Computer.java" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/players/Computer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/GameActivity.java" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/GameActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/MainMenu.java" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/MainMenu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/build/source/r/debug/ru/skilrex/tick_tack_toe/R.java" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/build/source/r/debug/ru/skilrex/tick_tack_toe/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/values-ru/strings.xml" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/values-ru/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/build/res/all/debug/values/values.xml" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/build/res/all/debug/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="E:\src\My_Projects\Tick-Tack-Toe-Android\Tick-Tick-Tack-Toe\src\main\res\menu\pref.xml" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/menu/set_difficulty.xml" />
+      <change type="MOVED" beforePath="E:\src\My_Projects\Tick-Tack-Toe-Android\Tick-Tick-Tack-Toe\src\main\res\menu\test_game.xml" afterPath="$PROJECT_DIR$/Tick-Tick-Tack-Toe/build/res/all/debug/menu/stat.xml" />
     </list>
     <ignored path="Tick-Tick-Tack-Toe.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,7 +47,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -90,6 +100,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </line_breakpoints>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -98,7 +109,29 @@
     <favorites_list name="Tick-Tick-Tack-Toe" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="Computer.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/players/Computer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="19" selection-start="1174" selection-end="1174" vertical-scroll-proportion="0.3782857" vertical-offset="264" max-vertical-offset="1343">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1376940797019" expanded="false" signature="2547:6073" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameField.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/game/GameField.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="31" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3485">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -153,22 +186,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/layout/activity_game.xml" />
-        <option value="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/layout/activity_win.xml" />
-        <option value="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/LastGameInfo.java" />
-        <option value="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/GameActivity.java" />
-        <option value="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/game/GameField.java" />
         <option value="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/layout/activity_pref.xml" />
         <option value="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/Statistic.java" />
         <option value="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/game/StatGameInfo.java" />
-        <option value="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/MainMenu.java" />
         <option value="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/WinActivity.java" />
-        <option value="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/values-ru/strings.xml" />
         <option value="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/StatActivity.java" />
         <option value="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/layout/activity_stat.xml" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/values-ru/strings.xml" />
+        <option value="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/layout/activity_setdifficulty.xml" />
+        <option value="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/MainMenu.java" />
+        <option value="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/SetDifficultyActivity.java" />
+        <option value="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/GameActivity.java" />
+        <option value="$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/players/Computer.java" />
       </list>
     </option>
   </component>
@@ -204,6 +237,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -371,36 +405,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="menu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tick-Tick-Tack-Toe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tick-Tack-Toe-Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tick-Tick-Tack-Toe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -505,7 +509,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -521,7 +524,7 @@
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="04ff82a62250756d" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_4" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Android_4.1" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
@@ -534,8 +537,8 @@
       <recent name="E:\src\My_Projects\Tick-Tack-Toe-Android\Tick-Tick-Tack-Toe\src\main\res\values-ru" />
     </key>
   </component>
-  <component name="RunManager" selected="4d017a09-9d15-4efe-a0ee-a2605d17fbf1">
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests" id="d01e0aa8-1bb2-4c90-a6c3-4f0f60fbd205">
+  <component name="RunManager" selected="Android Application.Tick-Tick-Tack-Toe">
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
       <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
@@ -553,7 +556,7 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote" id="d557b231-385a-46b2-aa14-af1e1d53481f">
+    <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
@@ -561,7 +564,7 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet" id="ed7f6134-c0f5-4c14-88fc-6be09d95276f">
+    <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
       <option name="HTML_FILE_NAME" />
@@ -574,7 +577,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application" id="9527be9f-7c24-4583-9e2f-3ae633246da5">
+    <configuration default="true" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -588,7 +591,7 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit" id="351df0df-13a1-4fd2-bc07-8e6227ad9c18">
+    <configuration default="true" type="JUnit" factoryName="JUnit">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -608,7 +611,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application" id="e67f7da7-ac92-46ee-9c48-411a75a39d08">
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
       <option name="MODE" value="default_activity" />
@@ -624,7 +627,7 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Tick-Tick-Tack-Toe" type="AndroidRunConfigurationType" factoryName="Android Application" id="4d017a09-9d15-4efe-a0ee-a2605d17fbf1">
+    <configuration default="false" name="Tick-Tick-Tack-Toe" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="Tick-Tick-Tack-Toe" />
       <option name="ACTIVITY_CLASS" value="" />
       <option name="MODE" value="default_activity" />
@@ -643,7 +646,7 @@
       <method />
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="4d017a09-9d15-4efe-a0ee-a2605d17fbf1" />
+      <item index="0" class="java.lang.String" itemvalue="Android Application.Tick-Tick-Tack-Toe" />
     </list>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
@@ -701,68 +704,44 @@
       <created>1376823802903</created>
       <updated>1376823802903</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add statistic + some fixes">
+      <created>1376824073691</created>
+      <updated>1376824073691</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1932" height="1052" extended-state="0" />
+    <frame x="-6" y="-6" width="1932" height="1052" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26976496" sideWeight="0.7069922" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26976496" sideWeight="0.7069922" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17022412" sideWeight="0.6714761" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15955175" sideWeight="0.7069922" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29300776" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17022412" sideWeight="0.7069922" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29300776" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26976496" sideWeight="0.7069922" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -780,113 +759,14 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/build/res/all/debug/layout/activity_main.xml">
+    <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/menu/main_menu.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="23" selection-start="163" selection-end="163" vertical-scroll-proportion="0.123188406" vertical-offset="0" max-vertical-offset="552" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="875" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/game/GameField.java">
+    <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/menu/main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="61" selection-start="4786" selection-end="4786" vertical-scroll-proportion="0.59749144" vertical-offset="377" max-vertical-offset="1275">
-          <folding>
-            <element signature="method#GameField#0;class#GameField#0" expanded="false" />
-            <element signature="method#getNumToWin#0;class#GameField#0" expanded="false" />
-            <element signature="method#getFieldLength#0;class#GameField#0" expanded="false" />
-            <element signature="method#getMaxSteps#0;class#GameField#0" expanded="false" />
-            <element signature="method#eraseField#0;class#GameField#0" expanded="false" />
-            <element signature="method#viewPlane#0;class#GameField#0" expanded="false" />
-            <element signature="method#isPlayerPoint#0;class#GameField#0" expanded="false" />
-            <element signature="method#setPoint#0;class#GameField#0" expanded="false" />
-            <element signature="method#getPoint#0;class#GameField#0" expanded="false" />
-            <element signature="method#getLastStepX#0;class#GameField#0" expanded="false" />
-            <element signature="method#getLastStepY#0;class#GameField#0" expanded="false" />
-            <element signature="method#incHistory#0;class#GameField#0" expanded="false" />
-            <element signature="method#addStep#0;class#GameField#0" expanded="false" />
-            <element signature="method#erasePoint#0;class#GameField#0" expanded="false" />
-            <element signature="method#stepBack#0;class#GameField#0" expanded="false" />
-            <element signature="method#getHistorySteps#0;class#GameField#0" expanded="false" />
-            <element signature="method#checkWin#0;class#GameField#0" expanded="false" />
-            <element signature="method#checkWinHorizontal#0;class#GameField#0" expanded="false" />
-            <element signature="method#checkWinVertical#0;class#GameField#0" expanded="false" />
-            <element signature="method#checkWinDiagonal#0;class#GameField#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/layout/activity_game.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="52" selection-start="928" selection-end="928" vertical-scroll-proportion="0.019953052" vertical-offset="272" max-vertical-offset="2040">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="40" selection-start="297" selection-end="297" vertical-scroll-proportion="0.15507412" vertical-offset="0" max-vertical-offset="877">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/GameActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="71" selection-start="3610" selection-end="3610" vertical-scroll-proportion="0.7780347" vertical-offset="772" max-vertical-offset="2006">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/content/ContextWrapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="45" selection-start="1530" selection-end="1530" vertical-scroll-proportion="0.33333334" vertical-offset="358" max-vertical-offset="3179" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/game/StatGameInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="31" selection-start="351" selection-end="351" vertical-scroll-proportion="0.21322691" vertical-offset="0" max-vertical-offset="877">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/MainMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="8" selection-start="987" selection-end="1161" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/WinActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="56" selection-start="1028" selection-end="1028" vertical-scroll-proportion="0.5564648" vertical-offset="136" max-vertical-offset="1530">
-          <folding>
-            <element signature="e#1028#1048#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/layout/activity_win.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state line="26" column="15" selection-start="890" selection-end="890" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1037">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="4" selection-start="872" selection-end="915" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/values-ru/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="875" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/layout/activity_main.xml">
@@ -894,35 +774,109 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="33" selection-start="254" selection-end="254" vertical-scroll-proportion="0.20307167" vertical-offset="0" max-vertical-offset="586">
-          <folding>
-            <element signature="e#343#361#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="9" selection-start="191" selection-end="191" vertical-scroll-proportion="0.11657143" vertical-offset="0" max-vertical-offset="875">
+        <state line="14" column="0" selection-start="522" selection-end="522" vertical-scroll-proportion="0.28" vertical-offset="0" max-vertical-offset="850">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/layout/activity_stat.xml">
+    <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/layout/activity_game.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
       <provider editor-type-id="text-editor">
-        <state line="29" column="39" selection-start="1137" selection-end="1137" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1224">
+        <state line="5" column="15" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2040">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/game/StatGameInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="28" selection-start="317" selection-end="317" vertical-scroll-proportion="0.19384265" vertical-offset="0" max-vertical-offset="877">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/WinActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="64" selection-start="909" selection-end="909" vertical-scroll-proportion="0.48460662" vertical-offset="0" max-vertical-offset="1530">
+          <folding>
+            <element signature="e#1112#1132#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="873">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/values-ru/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="42" selection-start="1114" selection-end="1114" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="72" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/MainMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="29" selection-start="573" selection-end="573" vertical-scroll-proportion="0.3295325" vertical-offset="0" max-vertical-offset="877">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/StatActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="44" selection-start="254" selection-end="255" vertical-scroll-proportion="0.17485714" vertical-offset="0" max-vertical-offset="875">
+        <state line="9" column="44" selection-start="254" selection-end="255" vertical-scroll-proportion="0.07753706" vertical-offset="0" max-vertical-offset="877">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/res/layout/activity_setdifficulty.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="52" selection-start="784" selection-end="784" vertical-scroll-proportion="0.5802048" vertical-offset="0" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/GameActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="51" selection-start="1513" selection-end="1513" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="2091">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/SetDifficultyActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="9" selection-start="878" selection-end="878" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/game/GameField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="31" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3485">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tick-Tick-Tack-Toe/src/main/java/ru/skilrex/tick_tack_toe/players/Computer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="19" selection-start="1174" selection-end="1174" vertical-scroll-proportion="0.3782857" vertical-offset="264" max-vertical-offset="1343">
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1376940797019" expanded="false" signature="2547:6073" placeholder="..." />
           </folding>
         </state>
       </provider>

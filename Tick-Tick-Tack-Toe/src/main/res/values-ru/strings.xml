@@ -21,4 +21,8 @@
     <string name="stat_wins">Побед: </string>
     <string name="stat_loses">Проигрышей: </string>
 
+    <string name="difficulty_low">Легкий</string>
+    <string name="difficulty_medium">Средний</string>
+    <string name="difficulty_hard">Сложный</string>
+
 </resources>

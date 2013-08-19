@@ -24,7 +24,7 @@ public class MainMenu extends Activity {
         Intent intent = null;
         switch (view.getId()){
             case R.id.pvcBtn:
-                intent = new Intent(this, GameActivity.class);
+                intent = new Intent(this, SetDifficultyActivity.class);
                 break;
             case R.id.statBtn:
                 intent = new Intent(this, StatActivity.class);

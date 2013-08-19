@@ -6,25 +6,71 @@ import java.util.Random;
 
 public class Computer extends ru.skilrex.tick_tack_toe.players.Player{
     private static final char COMPUTER = 'C';
+    int difficulty = 0;
 
     Random random = new Random();
 
-    public Computer(char c){
+    public Computer(String difficulty, char c){
         super(c, COMPUTER);
+
+        if(difficulty.equals("easy")) this.difficulty = 1;
+        else if (difficulty.equals("medium")) this.difficulty = 2;
+        else if (difficulty.equals("hard")) this.difficulty = 3;
     }
 
     @Override
     public void stepComputer(GameField gameField){
-        System.out.println("\n Ход компьютера: ");
-
-        if(!betterStepHorizontal(gameField) && !betterStepVertical(gameField) && !betterStepDiagonal(gameField)){
-            setY(random.nextInt(gameField.getFieldLength()) + GameField.RULER_MIN_VALUE);
-            setX(random.nextInt(gameField.getFieldLength()) + GameField.RULER_MIN_VALUE);
+        switch (difficulty){
+            case 1:
+                if (betterStep(gameField, 'O')){
+                    randomStep(gameField);
+                }
+                break;
+            case 2:
+                if (betterStep(gameField, 'O')){ //Поиск посл хода для противника
+                    if(betterStep(gameField, 'X')){ //Поиск посл хода для себя
+                        randomStep(gameField); //Рандом, на случай, если нет подходящего хода
+                    }
+                }
+                break;
+            case 3:
+                if (betterStep(gameField, 'O')){ //Поиск посл хода для противника
+                    if(betterStep(gameField, 'X')){ //Поиск посл хода для себя
+                        stepInCorner(gameField); //Бить в углы если нет более подходящего хода.
+                    }
+                }
+                break;
         }
     }
 
     //AI
-    public boolean betterStepHorizontal(GameField gameField){
+
+    //Метод проверки на победу
+    public boolean betterStep(GameField gameField, char player){ //Закрывает последнее место, для победы, для выбранного игрока - player.
+        if(!betterStepDiagonal(gameField, player) && !betterStepHorizontal(gameField, player) && !betterStepVertical(gameField, player)){
+            return true;
+        } else return false;
+    }
+
+    public void randomStep(GameField gameField){
+        setY(random.nextInt(gameField.getFieldLength()) + GameField.RULER_MIN_VALUE);
+        setX(random.nextInt(gameField.getFieldLength()) + GameField.RULER_MIN_VALUE);
+    }
+
+    public void stepInCorner(GameField gameField){
+
+        for (int row = 0; row <= 2; row += 2){
+            for (int col = 0; col <= 2; col += 2){
+                if(gameField.getPoint(row, col) == GameField.DEFAULT_SYMBOL){
+                    setY(row + GameField.RULER_MIN_VALUE);
+                    setX(col + GameField.RULER_MIN_VALUE);
+                }
+            }
+        }
+    }
+
+    //Методы проверок победы.
+    private boolean betterStepHorizontal(GameField gameField, char player){
         boolean haveBest = false;
         int numSymb;
         int bestRow = -1;
@@ -32,7 +78,7 @@ public class Computer extends ru.skilrex.tick_tack_toe.players.Player{
         for(int row = 0; row < gameField.getFieldLength(); row++){
             numSymb = 0;
             for (int col = 0; col < gameField.getFieldLength(); col++){
-                if(gameField.getPoint(row, col) == 'X') numSymb++;
+                if(gameField.getPoint(row, col) == player) numSymb++;
                 if(numSymb == (gameField.getNumToWin()-1)){
                     bestRow = row;
                 }
@@ -53,7 +99,7 @@ public class Computer extends ru.skilrex.tick_tack_toe.players.Player{
         return haveBest;
     }
 
-    public boolean betterStepVertical(GameField gameField){
+    private boolean betterStepVertical(GameField gameField, char player){
         boolean haveBest = false;
         int numSymb;
         int bestRow;
@@ -61,7 +107,7 @@ public class Computer extends ru.skilrex.tick_tack_toe.players.Player{
         for(int col = 0; col < gameField.getFieldLength(); col++){
             numSymb = 0;
             for (int row = 0; row < gameField.getFieldLength(); row++){
-                if(gameField.getPoint(row, col) == 'X') numSymb++;
+                if(gameField.getPoint(row, col) == player) numSymb++;
                 if(numSymb == (gameField.getNumToWin()-1)){
                     bestCol = col;
 
@@ -83,12 +129,12 @@ public class Computer extends ru.skilrex.tick_tack_toe.players.Player{
         return haveBest;
     }
 
-    public boolean betterStepDiagonal(GameField gameField){
+    private boolean betterStepDiagonal(GameField gameField, char player){
         boolean haveBest = false;
 
         int numSymb = 0;
         for(int i = 0; i < gameField.getFieldLength(); i++){
-            if(gameField.getPoint(i,i) == 'X') numSymb++;
+            if(gameField.getPoint(i,i) == player) numSymb++;
             if (numSymb == (gameField.getNumToWin()-1)){
                 for(int j = 0; j < gameField.getFieldLength(); j++){
                     if(gameField.getPoint(j,j) == GameField.DEFAULT_SYMBOL){
@@ -104,7 +150,7 @@ public class Computer extends ru.skilrex.tick_tack_toe.players.Player{
         numSymb = 0;
         int col=0; //Столбец
         for(int row = gameField.getFieldLength() - 1; row >= 0; row--){
-            if(gameField.getPoint(row, col) == 'X') numSymb++;
+            if(gameField.getPoint(row, col) == player) numSymb++;
             col++;
             if (numSymb == (gameField.getNumToWin()-1)){
                 int col2=0;
