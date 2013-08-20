@@ -1,7 +1,7 @@
 package ru.skilrex.tick_tack_toe.game;
 
-import android.content.Context;
 import android.widget.GridLayout;
+import android.widget.LinearLayout;
 
 import ru.skilrex.tick_tack_toe.R;
 import ru.skilrex.tick_tack_toe.players.Player;
@@ -10,7 +10,7 @@ public class GameField {
 
     private final static int DEFAULT_FIELD_SIZE = 3;
     public final static char DEFAULT_SYMBOL = ' ';
-    public final static int RULER_MIN_VALUE = 1;     //Мин. значение боковых линеек
+    public final static int RULER_MIN_VALUE = 0;     //Мин. значение боковых линеек
 
     private int fieldSize = DEFAULT_FIELD_SIZE;
     private static int numToWin;
@@ -77,7 +77,7 @@ public class GameField {
         return isPlayerPoint;
     }
 
-    public void setPoint(char symbol, int x, int y, Context context){
+    public void setPoint(char symbol, int x, int y){
         if(field[y][x] == DEFAULT_SYMBOL) {
             field[y][x] = symbol;
             Player.setWork(false);
@@ -109,26 +109,34 @@ public class GameField {
             field[y][x] = DEFAULT_SYMBOL;
     }
 
-    public void stepBack(GridLayout gl1, GameField gameField, int ONE_POINT_SIZE){
-        int childCount = gl1.getChildCount();
+    public void stepBack(LinearLayout llGame, GameField gameField, int ONE_POINT_SIZE){
+        int childCount = llGame.getChildCount();
         int x,y;
-        for(int i = 0; i < childCount; i++ ){
-            x = Math.round(gl1.getChildAt(i).getX() / ONE_POINT_SIZE) + GameField.RULER_MIN_VALUE;
-            y = Math.round(gl1.getChildAt(i).getY() / ONE_POINT_SIZE) + GameField.RULER_MIN_VALUE;
-            if((x == gameField.getLastStepX()) && (y == gameField.getLastStepY())){
-                gl1.getChildAt(i).setBackgroundResource(R.drawable.clear);
-                gl1.getChildAt(i).setClickable(true);
+
+        for(int col = 0; col < childCount; col++ ){
+            x = col + GameField.RULER_MIN_VALUE;
+            for (int row = 0; row < childCount; row++){
+                y = row + GameField.RULER_MIN_VALUE;
+                if((x == gameField.getLastStepX()) && (y == gameField.getLastStepY())){
+                    LinearLayout ll = (LinearLayout) llGame.getChildAt(row);
+                    ll.getChildAt(col).setBackgroundResource(R.drawable.clear);
+                    ll.getChildAt(col).setClickable(true);
+                }
             }
         }
+
         historySteps--;
         erasePoint(historyX[historySteps], historyY[historySteps]);
 
-        for(int i = 0; i < childCount; i++ ){
-            x = Math.round(gl1.getChildAt(i).getX() / ONE_POINT_SIZE) + GameField.RULER_MIN_VALUE;
-            y = Math.round(gl1.getChildAt(i).getY() / ONE_POINT_SIZE) + GameField.RULER_MIN_VALUE;
-            if((x == gameField.getLastStepX()) && (y == gameField.getLastStepY())){
-                gl1.getChildAt(i).setBackgroundResource(R.drawable.clear);
-                gl1.getChildAt(i).setClickable(true);
+        for(int col = 0; col < childCount; col++ ){
+            x = col + GameField.RULER_MIN_VALUE;
+            for (int row = 0; row < childCount; row++){
+                y = row + GameField.RULER_MIN_VALUE;
+                if((x == gameField.getLastStepX()) && (y == gameField.getLastStepY())){
+                    LinearLayout ll = (LinearLayout) llGame.getChildAt(row);
+                    ll.getChildAt(col).setBackgroundResource(R.drawable.clear);
+                    ll.getChildAt(col).setClickable(true);
+                }
             }
         }
         historySteps--;

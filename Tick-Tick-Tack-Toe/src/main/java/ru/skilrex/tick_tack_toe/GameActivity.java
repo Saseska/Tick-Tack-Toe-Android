@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.view.View;
 import android.widget.GridLayout;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import ru.skilrex.tick_tack_toe.game.GameField;
@@ -26,7 +27,10 @@ public class GameActivity extends Activity {
     ImageButton ib7;
     ImageButton ib8;
     ImageButton ib9;
-    GridLayout gl1;
+    LinearLayout llGame;
+    LinearLayout ll0;
+    LinearLayout ll1;
+    LinearLayout ll2;
     Context context;
 
     private final static int ONE_POINT_SIZE = 160;
@@ -36,7 +40,8 @@ public class GameActivity extends Activity {
     private GameField gameField = new GameField(3,3);
     private boolean work;
     private boolean gameEnd = false;
-    private int childCount;
+    private int llGameChild;
+    private int ll0Child;
     private String difficulty;
 
     @Override
@@ -57,8 +62,15 @@ public class GameActivity extends Activity {
         ib7 = (ImageButton) findViewById(R.id.ib7);
         ib8 = (ImageButton) findViewById(R.id.ib8);
         ib9 = (ImageButton) findViewById(R.id.ib9);
-        gl1 = (GridLayout) findViewById(R.id.gl1);
-        childCount = gl1.getChildCount();
+        llGame = (LinearLayout) findViewById(R.id.llGame);
+        ll0 = (LinearLayout) findViewById(R.id.ll0);
+        ll1 = (LinearLayout) findViewById(R.id.ll1);
+        ll2 = (LinearLayout) findViewById(R.id.ll2);
+
+
+        llGameChild = llGame.getChildCount();
+        ll0Child = ll0.getChildCount();
+
     }
 
 
@@ -73,12 +85,22 @@ public class GameActivity extends Activity {
         switch (view.getId()){
             default:
                 work = true;
-                int x,y;
-                x = Math.round(view.getX() / ONE_POINT_SIZE) + GameField.RULER_MIN_VALUE;
-                y = Math.round(view.getY() / ONE_POINT_SIZE) + GameField.RULER_MIN_VALUE;
+                int x = 0, y = 0;
+
+                LinearLayout linL = (LinearLayout) view.getParent();
+                //x = Math.round(view.getX() / ONE_POINT_SIZE) + GameField.RULER_MIN_VALUE;
+
+                for(int i = 0; i < 3; i++){
+                    x = i;
+                    if(linL.getChildAt(x) == view) break;
+                }
+
+                if(linL.getId() == R.id.ll0) y = 0;
+                else if(linL.getId() == R.id.ll1) y = 1;
+                else if(linL.getId() == R.id.ll2) y = 2;
 
                 while (work){
-                    playerX.step(gameField, String.valueOf(y), String.valueOf(x), context);
+                    playerX.step(gameField, y, x);
                     work = playerX.getWork();
                 }
                 view.setBackgroundResource(R.drawable.x);
@@ -87,13 +109,16 @@ public class GameActivity extends Activity {
                 checkWin(playerX);
                 if(gameEnd) return;
 
-                playerO.step(gameField, String.valueOf(x), String.valueOf(y), context);
-                for(int i = 0; i < childCount; i++ ){
-                    x = Math.round(gl1.getChildAt(i).getX() / ONE_POINT_SIZE) + GameField.RULER_MIN_VALUE;
-                    y = Math.round(gl1.getChildAt(i).getY() / ONE_POINT_SIZE) + GameField.RULER_MIN_VALUE;
-                    if((x == gameField.getLastStepX()) && (y == gameField.getLastStepY())){
-                        gl1.getChildAt(i).setBackgroundResource(R.drawable.o);
-                        gl1.getChildAt(i).setClickable(false);
+                playerO.step(gameField, x, y);
+                for(int col = 0; col < ll0Child; col++ ){
+                    x = col + GameField.RULER_MIN_VALUE;
+                    for (int row = 0; row < llGameChild; row++){
+                        y = row + GameField.RULER_MIN_VALUE;
+                        if((x == gameField.getLastStepX()) && (y == gameField.getLastStepY())){
+                            LinearLayout ll = (LinearLayout) llGame.getChildAt(row);
+                            ll.getChildAt(col).setBackgroundResource(R.drawable.o);
+                            ll.getChildAt(col).setClickable(false);
+                        }
                     }
                 }
                 checkWin(playerO);
@@ -101,7 +126,7 @@ public class GameActivity extends Activity {
 
             case R.id.btnBack:
                 if(gameField.getHistorySteps() > 1){
-                    gameField.stepBack(gl1, gameField, ONE_POINT_SIZE);
+                    gameField.stepBack(llGame, gameField, ONE_POINT_SIZE);
                 }
                 break;
         }

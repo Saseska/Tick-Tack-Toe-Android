@@ -1,8 +1,5 @@
 package ru.skilrex.tick_tack_toe.players;
 
-import android.content.Context;
-import android.widget.Toast;
-
 import ru.skilrex.tick_tack_toe.game.GameField;
 
 public class Player {
@@ -40,32 +37,30 @@ public class Player {
         return work;
     }
 
-    public void step(GameField gameField, String etY, String etX, Context context){
+    public void step(GameField gameField, int y, int x){
         work = true;
         while (work){
             if(playerType == 'H'){
-                stepHuman(gameField, etY, etX);
+                stepHuman(gameField, y, x);
             }
             else if(playerType == 'C'){
                 stepComputer(gameField);
             }
-            if(!checkNum(y,gameField) || !checkNum(x,gameField)){
+            if(!checkNum(this.y,gameField) || !checkNum(this.x,gameField)){
                 if (playerType == 'H'){
-                    Toast.makeText(context , "Input Error", Toast.LENGTH_SHORT).show();
                     break;
                 }
                 return;
             }
-            gameField.setPoint(this.getSymbol(), x - GameField.RULER_MIN_VALUE, y - GameField.RULER_MIN_VALUE, context);
+            gameField.setPoint(this.getSymbol(), this.x - GameField.RULER_MIN_VALUE, this.y - GameField.RULER_MIN_VALUE);
             if((playerType == 'H') && work){
-                Toast.makeText(context , "Error, point fill", Toast.LENGTH_SHORT).show();
                 break;
             }
         }
-        gameField.addStep(x - GameField.RULER_MIN_VALUE, y - GameField.RULER_MIN_VALUE);   //Добавить в память ходов
+        gameField.addStep(this.x - GameField.RULER_MIN_VALUE, this.y - GameField.RULER_MIN_VALUE);   //Добавить в память ходов
         gameField.incHistory();
     }
 
-    public void stepHuman(GameField gameField, String etY, String etX){}
+    public void stepHuman(GameField gameField, int y, int x){}
     public void stepComputer(GameField gameField){}
 }

@@ -13,8 +13,8 @@ public class Human extends ru.skilrex.tick_tack_toe.players.Player{
     }
 
     @Override
-    public void stepHuman(GameField gameField, String etY, String etX){
-        setY(Integer.parseInt(etY));
-        setX(Integer.parseInt(etX));
+    public void stepHuman(GameField gameField, int y, int x){
+        setY(y);
+        setX(x);
     }
 }
