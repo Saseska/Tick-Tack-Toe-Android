@@ -7,6 +7,8 @@
     <string name="title_activity_win">Конец игры</string>
     <string name="title_activity_main">Главное меню</string>
     <string name="title_activity_stat">Статистика</string>
+    <string name="title_activity_set_difficulty">Выбор сложности</string>
+    <string name="title_activity_settings">Настройки</string>
 
     <string name="player">Игрок </string>
     <string name="menu_pva">Игра против смартфона</string>
@@ -24,5 +26,4 @@
     <string name="difficulty_low">Легкий</string>
     <string name="difficulty_medium">Средний</string>
     <string name="difficulty_hard">Сложный</string>
-
 </resources>

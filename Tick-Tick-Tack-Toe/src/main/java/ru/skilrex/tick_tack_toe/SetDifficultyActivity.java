@@ -1,18 +1,47 @@
 package ru.skilrex.tick_tack_toe;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 public class SetDifficultyActivity extends Activity {
+
+    boolean orientation = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setdifficulty);
 
+        loadSettings();
+        if(orientation){ //landscape
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        } else { //portait
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        }
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()){
+            case R.id.action_settings:
+                Intent intent = new Intent(this, SettingsActivity.class);
+                startActivity(intent);
+                break;
+        }
+        return true;
     }
 
     public void onClick(View view){
@@ -31,12 +60,10 @@ public class SetDifficultyActivity extends Activity {
         startActivity(intent);
     }
 
-
-/*    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.set_difficulty, menu);
-        return true;
-    }*/
+    void loadSettings(){
+        SharedPreferences sPref;
+        sPref = getSharedPreferences("Settings", MODE_PRIVATE);
+        orientation = sPref.getBoolean("orientation", orientation);
+    }
     
 }

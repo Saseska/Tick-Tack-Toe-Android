@@ -25,13 +25,13 @@ public final class R {
         public static final int x=0x7f020004;
     }
     public static final class id {
-        public static final int action_settings=0x7f08001d;
+        public static final int action_settings=0x7f08001e;
         public static final int btnBack=0x7f08000d;
         public static final int btnEasy=0x7f080010;
         public static final int btnHard=0x7f080012;
         public static final int btnMedium=0x7f080011;
-        public static final int btnNewGame=0x7f08001a;
-        public static final int btnShowHist=0x7f08001b;
+        public static final int btnNewGame=0x7f08001b;
+        public static final int btnShowHist=0x7f08001c;
         public static final int ib1=0x7f080002;
         public static final int ib2=0x7f080003;
         public static final int ib3=0x7f080004;
@@ -45,31 +45,28 @@ public final class R {
         public static final int ll1=0x7f080005;
         public static final int ll2=0x7f080009;
         public static final int llGame=0x7f080000;
-        public static final int pbWinsLoses=0x7f080017;
+        public static final int pbWinsLoses=0x7f080018;
         public static final int pvcBtn=0x7f08000e;
         public static final int statBtn=0x7f08000f;
-        public static final int tvGameField=0x7f080019;
-        public static final int tvHistory=0x7f08001c;
-        public static final int tvLoses=0x7f080014;
-        public static final int tvNumLoses=0x7f080016;
-        public static final int tvNumWins=0x7f080015;
-        public static final int tvWinner=0x7f080018;
-        public static final int tvWins=0x7f080013;
+        public static final int tglBtnOrient=0x7f080013;
+        public static final int tvGameField=0x7f08001a;
+        public static final int tvHistory=0x7f08001d;
+        public static final int tvLoses=0x7f080015;
+        public static final int tvNumLoses=0x7f080017;
+        public static final int tvNumWins=0x7f080016;
+        public static final int tvWinner=0x7f080019;
+        public static final int tvWins=0x7f080014;
     }
     public static final class layout {
         public static final int activity_game=0x7f030000;
         public static final int activity_main=0x7f030001;
         public static final int activity_setdifficulty=0x7f030002;
-        public static final int activity_stat=0x7f030003;
-        public static final int activity_win=0x7f030004;
+        public static final int activity_settings=0x7f030003;
+        public static final int activity_stat=0x7f030004;
+        public static final int activity_win=0x7f030005;
     }
     public static final class menu {
-        public static final int game=0x7f070000;
-        public static final int main=0x7f070001;
-        public static final int main_menu=0x7f070002;
-        public static final int set_difficulty=0x7f070003;
-        public static final int stat=0x7f070004;
-        public static final int win=0x7f070005;
+        public static final int menu=0x7f070000;
     }
     public static final class string {
         /**  From: file:/E:/src/My_Projects/Tick-Tack-Toe-Android/Tick-Tick-Tack-Toe/src/main/res/values/strings.xml 
@@ -91,8 +88,8 @@ public final class R {
         public static final int title_activity_game=0x7f05000d;
         public static final int title_activity_main=0x7f05000e;
         public static final int title_activity_set_difficulty=0x7f05000f;
-        public static final int title_activity_stat=0x7f050010;
-        public static final int title_activity_test_game=0x7f050011;
+        public static final int title_activity_settings=0x7f050010;
+        public static final int title_activity_stat=0x7f050011;
         public static final int title_activity_win=0x7f050012;
         public static final int win_deadheat=0x7f050013;
         public static final int win_playero=0x7f050014;

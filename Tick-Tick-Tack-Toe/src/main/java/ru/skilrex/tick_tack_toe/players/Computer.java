@@ -36,7 +36,11 @@ public class Computer extends ru.skilrex.tick_tack_toe.players.Player{
             case 3:
                 if (betterStep(gameField, 'O')){ //Поиск посл хода для противника
                     if(betterStep(gameField, 'X')){ //Поиск посл хода для себя
-                        stepInCorner(gameField);//Бить в углы если нет более подходящего хода.
+                        if(stepInCenter(gameField)){
+                            if(stepInCorner(gameField)){ //Бить в углы если нет более подходящего хода.
+                                randomStep(gameField);
+                            }
+                        }
                     }
                 }
                 break;
@@ -57,25 +61,27 @@ public class Computer extends ru.skilrex.tick_tack_toe.players.Player{
         setX(random.nextInt(gameField.getFieldLength()) + GameField.RULER_MIN_VALUE);
     }
 
-    public void stepInCorner(GameField gameField){
+    public boolean stepInCorner(GameField gameField){
         for (int row = 0; row <= 2; row += 2){
             for (int col = 0; col <= 2; col += 2){
                 if(gameField.getPoint(row, col) == GameField.DEFAULT_SYMBOL){
                     setY(row + GameField.RULER_MIN_VALUE);
                     setX(col + GameField.RULER_MIN_VALUE);
+                    return false;
                 }
             }
         }
+        return true;
     }
 
-/*    public boolean stepInCenter(GameField gameField){
+    public boolean stepInCenter(GameField gameField){
         if(gameField.getPoint(1, 1) == GameField.DEFAULT_SYMBOL){
             setY(1 + GameField.RULER_MIN_VALUE);
             setX(1 + GameField.RULER_MIN_VALUE);
             return false;
         }
         else return true;
-    }*/
+    }
 
     //Методы проверок победы.
     private boolean betterStepHorizontal(GameField gameField, char player){

@@ -2,8 +2,11 @@ package ru.skilrex.tick_tack_toe;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.app.Activity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
@@ -12,10 +15,9 @@ import ru.skilrex.tick_tack_toe.game.StatGameInfo;
 public class WinActivity extends Activity {
 
     SharedPreferences sPref;
-    private final String NUM_WINS = "num_wins";
-    private final String NUM_LOSES = "num_loses";
     private int numWins = 0;
     private int numLoses = 0;
+    boolean orientation = false;
 
 
     TextView tvWinner;
@@ -26,6 +28,13 @@ public class WinActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_win);
+
+        loadSettings();
+        if(orientation){ //landscape
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        } else { //portait
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        }
 
         updateStat(StatGameInfo.winner);
 
@@ -42,12 +51,22 @@ public class WinActivity extends Activity {
     }
 
 
-/*    @Override
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.win, menu);
+        getMenuInflater().inflate(R.menu.menu, menu);
         return true;
-    }*/
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()){
+            case R.id.action_settings:
+                Intent intent = new Intent(this, SettingsActivity.class);
+                startActivity(intent);
+                break;
+        }
+        return true;
+    }
 
     public void onClickBtn(View view){
         switch (view.getId()){
@@ -86,6 +105,11 @@ public class WinActivity extends Activity {
         editor.putInt(StatGameInfo.NUM_WINS, StatGameInfo.numWins);
         editor.putInt(StatGameInfo.NUM_LOSES, StatGameInfo.numLoses);
         editor.commit();
+    }
+
+    public void loadSettings(){
+        sPref = getSharedPreferences("Settings", MODE_PRIVATE);
+        orientation = sPref.getBoolean("orientation", orientation);
     }
     
 }

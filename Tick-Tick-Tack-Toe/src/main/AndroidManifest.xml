@@ -28,7 +28,8 @@
         </activity>
         <activity
             android:name="ru.skilrex.tick_tack_toe.GameActivity"
-            android:label="@string/title_activity_test_game" >
+            android:label="@string/title_activity_game"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="ru.skilrex.tick_tack_toe.StatActivity"
@@ -37,6 +38,10 @@
         <activity
             android:name="ru.skilrex.tick_tack_toe.SetDifficultyActivity"
             android:label="@string/title_activity_set_difficulty" >
+        </activity>
+        <activity
+            android:name="ru.skilrex.tick_tack_toe.SettingsActivity"
+            android:label="@string/title_activity_settings" >
         </activity>
     </application>
 
