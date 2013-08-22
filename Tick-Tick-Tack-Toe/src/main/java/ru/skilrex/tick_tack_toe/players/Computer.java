@@ -37,8 +37,8 @@ public class Computer extends ru.skilrex.tick_tack_toe.players.Player{
                 if (betterStep(gameField, 'O')){ //Поиск посл хода для противника
                     if(betterStep(gameField, 'X')){ //Поиск посл хода для себя
                         if(stepInCenter(gameField)){
-                            if(stepInCorner(gameField)){ //Бить в углы если нет более подходящего хода.
-                                randomStep(gameField);
+                            if(stepInPlus(gameField)){ //Бить в углы если нет более подходящего хода.
+                                randomStep(gameField); //Рандом если углы заняты
                             }
                         }
                     }
@@ -61,12 +61,29 @@ public class Computer extends ru.skilrex.tick_tack_toe.players.Player{
         setX(random.nextInt(gameField.getFieldLength()) + GameField.RULER_MIN_VALUE);
     }
 
-    public boolean stepInCorner(GameField gameField){
+    /*public boolean stepInCorner(GameField gameField){
         for (int row = 0; row <= 2; row += 2){
             for (int col = 0; col <= 2; col += 2){
                 if(gameField.getPoint(row, col) == GameField.DEFAULT_SYMBOL){
                     setY(row + GameField.RULER_MIN_VALUE);
                     setX(col + GameField.RULER_MIN_VALUE);
+                    return false;
+                }
+            }
+        }
+        return true;
+    }*/
+
+    public boolean stepInPlus(GameField gameField){ //Ходить в точки 0;1 1;0 1;2 2;1
+        for (int i = 0; i < 2; i++){
+            for (int j = 1; j < 3; j++){
+                if(gameField.getPoint(i, j) == GameField.DEFAULT_SYMBOL){
+                    setY(i + GameField.RULER_MIN_VALUE);
+                    setX(j + GameField.RULER_MIN_VALUE);
+                    return false;
+                } else if(gameField.getPoint(j, i) == GameField.DEFAULT_SYMBOL){
+                    setY(j + GameField.RULER_MIN_VALUE);
+                    setX(i + GameField.RULER_MIN_VALUE);
                     return false;
                 }
             }
